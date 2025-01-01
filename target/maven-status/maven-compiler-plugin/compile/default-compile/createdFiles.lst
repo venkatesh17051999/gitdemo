@@ -1,0 +1,8 @@
+MyLearning\pageObject\OrderPage.class
+MyLearning\pageObject\CheckoutPage.class
+MyLearning\Resources\ExtentReportNG.class
+MyLearning\AbstractComponents\AbstractComponents.class
+MyLearning\pageObject\confirmPage.class
+MyLearning\pageObject\ProductCatalogue.class
+MyLearning\pageObject\CartPage.class
+MyLearning\pageObject\LandingPage.class

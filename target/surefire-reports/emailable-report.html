@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="7">Suite</th></tr>
+<tr><td><a href="#t0">Submit Order Test</a></td><td class="num">0</td><td class="num attn">1</td><td class="num attn">2</td><td class="num">88,845</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Error Validations Test</a></td><td class="num">1</td><td class="num">0</td><td class="num attn">1</td><td class="num">88,742</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">1</th><th class="num attn">1</th><th class="num attn">3</th><th class="num">177,587</th><th colspan="2"></th></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Submit Order Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">MyLearning.SubmitOrderTest</td><td><a href="#m0">SubmitOrder</a></td><td rowspan="2">1734239647166</td><td rowspan="2">14153</td></tr><tr class="failedeven"><td><a href="#m1">SubmitOrder</a></td></tr><tr><th colspan="4">Submit Order Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">MyLearning.SubmitOrderTest</td><td><a href="#m2">verifyorder</a></td><td rowspan="1">1734239714777</td><td rowspan="1">0</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Error Validations Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">MyLearning.ErrorValidationsTest</td><td><a href="#m3">ProductNameValidation</a></td><td rowspan="1">1734239687456</td><td rowspan="1">26390</td></tr><tr><th colspan="4">Error Validations Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">MyLearning.ErrorValidationsTest</td><td><a href="#m4">LoginErrorValidation</a></td><td rowspan="1">1734239647374</td><td rowspan="1">1547</td></tr></tbody>
+</table>
+<h2>Submit Order Test</h2><h3 id="m0">MyLearning.SubmitOrderTest#SubmitOrder</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{productname=IPHONE 13 PRO, password=Test@123, email=venkytest@gmail.com}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button _ngcontent-qqb-c33=&quot;&quot; routerlink=&quot;/dashboard/cart&quot; class=&quot;btn btn-custom&quot; style=&quot;margin-top: -10px;&quot; tabindex=&quot;0&quot;&gt;...&lt;/button&gt; is not clickable at point (2629, 27). Other element would receive the click: &lt;div _ngcontent-qqb-c31=&quot;&quot; class=&quot;ngx-spinner-overlay ng-tns-c31-1 ng-trigger ng-trigger-fadeIn ng-star-inserted&quot; style=&quot;background-color: rgba(51, 51, 51, 0.8); z-index: 99999; position: fixed; opacity: 1;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=131.0.6778.140)
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6fff194effef5c06e56bff49415235ed, clickElement {id=f.C01BBE553C46CF0E0B9BBFC1BEE434B6.d.0C9E6199C32418086604881A8D54F5CF.e.97}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.140, chrome: {chromedriverVersion: 131.0.6778.108 (3b014839fbc..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55201}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55201/devtoo..., se:cdpVersion: 131.0.6778.140, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (6fff194effef5c06e56bff49415235ed)] -&gt; xpath: //button[contains(@routerlink, &apos;cart&apos;)]]
+Session ID: 6fff194effef5c06e56bff49415235ed
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy13.click(Unknown Source)
+	at MyLearning.AbstractComponents.AbstractComponents.goToCartPage(AbstractComponents.java:52)
+	at MyLearning.SubmitOrderTest.SubmitOrder(SubmitOrderTest.java:34)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">MyLearning.SubmitOrderTest#SubmitOrder</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{productname=ADIDAS ORIGINAL, password=Test@1617, email=venky123@gmail.com}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: toast-container (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.140, chrome: {chromedriverVersion: 131.0.6778.108 (3b014839fbc..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55280}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55280/devtoo..., se:cdpVersion: 131.0.6778.140, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 52bdb6810ea3a5982bd065c552bbd580
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at MyLearning.AbstractComponents.AbstractComponents.waitElementToAppear(AbstractComponents.java:36)
+	at MyLearning.pageObject.ProductCatalogue.addProductToCart(ProductCatalogue.java:51)
+	at MyLearning.SubmitOrderTest.SubmitOrder(SubmitOrderTest.java:33)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">MyLearning.SubmitOrderTest#verifyorder</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method SubmitOrderTest.verifyorder()[pri:0, instance:MyLearning.SubmitOrderTest@40db2a24] depends on not successfully finished methods
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+... Removed 9 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Error Validations Test</h2><h3 id="m3">MyLearning.ErrorValidationsTest#ProductNameValidation</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
+	at MyLearning.ErrorValidationsTest.ProductNameValidation(ErrorValidationsTest.java:39)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+... Removed 20 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">MyLearning.ErrorValidationsTest#LoginErrorValidation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
