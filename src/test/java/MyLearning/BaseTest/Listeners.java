@@ -62,7 +62,7 @@ import MyLearning.Resources.ExtentReportNG;
 
 	@Override
 	public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
-		// TODO Auto-generated method stub
+		System.out.println("Pass");
 		
 	}
 
